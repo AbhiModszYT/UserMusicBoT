@@ -1,0 +1,51 @@
+{
+  "name": "AbhiModszYT",
+  "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+  "logo": "https://graph.org/file/71c3e8432ffe0276bedb9.jpg",
+  "keywords": [
+  "python3",
+  "telegram",
+  "MusicBot",
+  "telegram-bot",
+  "pyrogram"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "api id",
+      "value": "",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "api hash",
+      "value": "",
+      "required": true
+    },
+    "ASSIS_SESSION_STRING": {
+      "description": "A Pyrogram v2 String Session from @Sessoin_String_gen_BOT on Telegram. For Assis Id",
+      "value": "",
+      "required": true
+    },
+    "YOUR_SESSION_STRING": {
+      "description": "A Pyrogram v2 String Session from @Sessoin_String_gen_BOT on Telegram. For Your Main Acc",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Owner Id Added",
+      "value": "",
+      "required": true
+    }
+  },
+  "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "stack": "container"
+}
